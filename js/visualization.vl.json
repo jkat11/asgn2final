@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 800,
+  "height": 500,
+  "title": "Main Australian Airports",
+  "projection": {"type": ""},
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jkat11/asgn2final/main/js/Australia.geo.json",
+        "format": {"type": "topojson", "feature": "Australia.geo"}
+      },
+      "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/jkat11/asgn2final/main/data/Mainairports.csv"
+      },
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
+      "encoding": {
+        "longitude": {"field": "Longitude", "type": "quantitative"},
+        "latitude": {"field": "Latitude", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {}
+}

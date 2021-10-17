@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "https://raw.githubusercontent.com/jkat11/test/main/data/int.csv"},
+  "data": {"url": "https://raw.githubusercontent.com/jkat11/asgn2final/main/data/int.csv"},
   "mark": "line",
   "encoding": {
     "x": {

@@ -1,0 +1,29 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "data": {
+        "url": "data/average.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "Month",
+            "type": "nominal",
+            "title": " Month"
+        },
+        "y": {
+            "field": "Total",
+            "type": "quantitative",
+            "title": "Average Passengers"
+        }
+    },
+    "config": {
+        "background": "#e6ffff",
+        "axis": {
+            "titleColor": "#527298",
+            "labelColor": "#527298",
+            "labelFont": "sans-serif",
+            "labelFontSize": 15,
+            "titleFontSize": 15
+        }
+    }
+}

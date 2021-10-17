@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "https://raw.githubusercontent.com/jkat11/test/main/data/int.csv"},
+  "mark": "line",
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "nominal",
+      "title": "Year"
+    },
+    "y": {
+      "field": "Inbound",
+      "type": "quantitative",
+      "title": "Total number"
+    }
+  },
+  "config": {
+    "background": "#F3FAF9",
+    "axis": {
+      "titleColor": "#527298",
+      "labelColor": "#527298",
+      "labelFont": "sans-serif",
+      "labelFontSize": 15,
+      "titleFontSize": 15
+    }
+  }

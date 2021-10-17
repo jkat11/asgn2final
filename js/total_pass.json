@@ -1,0 +1,30 @@
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": "container",
+    "data": {
+        "url": "data/Total_Passengers.csv"
+    },
+    "mark": "bar",
+    "encoding": {
+        "x": {
+            "field": "Year",
+            "type": "nominal",
+            "title": " Year"
+        },
+        "y": {
+            "field": "Total Passengers",
+            "type": "quantitative",
+            "title": "Total Passengers"
+        }
+    },
+    "config": {
+        "background": "#F3FAF9",
+        "axis": {
+            "titleColor": "#527298",
+            "labelColor": "#527298",
+            "labelFont": "sans-serif",
+            "labelFontSize": 15,
+            "titleFontSize": 15
+        }
+    }
+}

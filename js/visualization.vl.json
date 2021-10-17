@@ -7,16 +7,16 @@
   "layer": [
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jkat11/asgn2/main/js/Australia.geo.json",
+        "url": "https://raw.githubusercontent.com/jkat11/asgn2final/main/js/Australia.geo.json",
         "format": {"type": "topojson", "feature": "Australia.geo"}
       },
       "mark": {"type": "geoshape", "fill": "lightgray", "stroke": "white"}
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/jkat11/asgn2/main/data/Mainairports.csv"
+        "url": "https://raw.githubusercontent.com/jkat11/asgn2final/main/data/Mainairports.csv"
       },
-      "mark": {"type": "circle", "tooltip": {"content": ""}},
+      "mark": {"type": "circle", "tooltip": {"content": "data"}},
       "encoding": {
         "longitude": {"field": "Longitude", "type": "quantitative"},
         "latitude": {"field": "Latitude", "type": "quantitative"}

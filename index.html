@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="js/vega_lite_vis.js"></script>
+   
+  <script type="text/javascript">
+  var spec2 = "js/visualization.vl.json";
+  vegaEmbed('#symbol_map', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+     
+  var spec3 = "js/average.json";
+  vegaEmbed('#bar_chart', spec3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);   
+  </script>">
+   
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-1">
+            <img src="images/qantas.png" />
+        </div>
+        <div class="pure-u-1">
+        </div>
+        <div class="pure-u-1-3">
+            <div id='text_div'>
+                <h1>Introduction</h1>
+                <p>The tourism industry encompassing domestic and international travel in Australia is significant, contributing 716,000 jobs and $69 billion dollars in gross value added to Australia's GDP. (1)
+                    <br> <br> Australia maintains a number of internationally recognised airports, all containing domestic and some containing international flight hubs. Most airports are interlinked for domestic travel.
+                    <br> <br> Australia is served by two key providers in Australia  flying international and domestic routes. This website looks to investigate patterns within domestic and international travel within Australia.
+                </p>
+            </div>
+        </div>
+        <div class="pure-u-1-3">
+            <h1>Different Domestic Flight Companies</h1>
+            <img src="images/logoq.png" />
+            <img src="images/virgin.png" />
+            <img src="images/jetstar.png" />
+            <p> Qantas was founded in 1920 and is Australia's largest airline for international flights and destinations
+            <br> <br> Commencing in 2000 Virgin Australia is one of the largest domestic flight carriers in Australia. They fly to 33 cities within Australia.
+             <br> <br> Jetsar (founded in 2003) is Australia's which is owned by Qantas which is a budget low domestic airline which has select international flights. 
+                </p>
+        </div>
+        <div class="pure-u-1-3">
+            <h1>Major Airports in Australia</h1>
+           <div id="symbol_map"></div>
+            
+
+   </div>
+        <div class="pure-u-1-2">
+            <div id='text_div'>
+                <h1>Domestic and International Trips </h1>
+                <p> Domestic travel within Australia has been an ever-expanding industry. AS seen from the graph on the left the total domestic travel has seen an increasing trend over the last ~40 years. This is replicated in the departure and arrival data for international flights with a growing trend within the industry. Flights international have grown exponentially due to advancements in technology and the accessibility. 
+                    <br> <br> Trends in data 
+                    <br> <br> 2001 
+                    <br> <br>In the year 2001 the world was mortified with the September 11th attacks on the Twin Towers. This event impacted many aspects of what was perceived to be normal life including flying and tourism. From the data seen in the graphs to the left this impact can be analysed as flights domestically and internationally in Australia stagnated and decreased between the years 2001-2002.  Residents around the world had fears of flying due to this traumatic event which hurt the industry. Consumer confidence was retrieved with further years following the growing trend of domestic and international travel. 
+                     <br> <br> Impact due to COVID- 19 
+                    <br> <br> Due to the current COVID – 19 pandemic the travel industry has massively suffered. This is due to travel restrictions between states alongside international travel. As seen in the data within the year 2020 travel dropped drastically. This was mainly due to boarder closures between states domestically to limit the spread of the virus alongside international borders. Boarders between international countries and states are expected to be open by the end of 2021.
+                </p>
+            </div>
+        </div>
+        <div class="pure-u-1-2">
+           <h1>Domestic Passengers Each Year</h1>
+           <p>             Total Domestic Passengers Every Year
+           </p>  
+           <img src="images/yearflight.JPG" /> 
+           <p>             Total Inbound International Passengers Each Year
+           </p>  
+           <img src="images/Inbound.JPG" />
+           <p>             Total Outbound International Passengers Every Year
+           </p>
+           <img src="images/Outbound.JPG" />
+           
+           <p>    Code avaliable on github
+           </p>  
+           </div>
+       
+       <div class="pure-u-1-2">
+            <div id='text_div'>
+                <h1>When do we travel?? </h1>
+                <p> This section aims to investigate when do Australians travel domestically. This data was to analyse if there were months over the last 20 years in which Australians preferred to travel. From the bar chart below, on average February seems to be the month with the least amount of travel. This can be seen as people undertaking less travel after the busy travelling holiday period October- January so that this affects the average passengers for this period. Trends also include that travel within the summer months is higher than those in the winter months. 
+                <br> <br>
+                <br> <br>
+                <br> <br> Average Domestic Passengers Between 2000-2019    
+               </p>
+               <div id="bar_chart"></div> 
+            </div>
+        </div>
+        <div class="pure-u-1-2">
+           <h1>Popular Routes</h1>
+            <p> `This section aims to investigate popular routes domestically within the past 20 years of travel within Australia. 
+                <br> <br> References 
+           </p>
+           
+            </div>
